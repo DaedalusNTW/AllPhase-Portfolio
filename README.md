@@ -5,3 +5,5 @@ The intended purpose was to allow the site owner to show their work to potential
 On a technical level, it is quite simple. 
 Small amounts of Javascript and PHP add barebones functionality. 
 At this time I had limited knowledge of either so I kept it as simple as possible while focusing on my core skillset of HTML/CSS.
+
+*This project is no longer live. I moved the website to Wordpress, redesigned the whole thing. And uploaded the old code here to github.*
