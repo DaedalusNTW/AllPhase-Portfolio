@@ -40,8 +40,6 @@ Thank you! Your message has been sent and will be responded to as soon as possib
 
 <?php 
 #This script handles form data.
-#Needs security against spam tho.
-#Before deployment we also need form validation.
 $name = $_POST['name'];
 $email = $_POST['email'];
 $project = $_POST['project'];
