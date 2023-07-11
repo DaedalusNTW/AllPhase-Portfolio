@@ -1,0 +1,116 @@
+/*This CSS is generic styling for the basic layout of the project grid for all service pages.*/
+.servicesPage-grid{
+  display:grid;
+  width: 62.5%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 22vw 22vw;
+  grid-gap:40px 15px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 45px;}
+.servicesPage-module{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;}
+.servicesPage-module a{
+  color:#ffffff;}
+.servicesPage-grid img{
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;}
+.servicesPage-module img:hover{
+  filter: brightness(70%);}
+.projectTitle{
+  position:relative;
+  text-align: center;
+  bottom: 10px;
+  color: #ffffff;
+  background-color: #5d6d7e;
+  padding: 15px;
+  border-radius: 0px 0px 15px 15px;}
+
+
+/*This CSS allows for more customization of each individual project grid to account for varience in both content and design pattern.*/
+.customHome-blurb{
+  width: 62.5%;
+  margin: auto;
+  margin-bottom: 65px;
+  margin-top:-15px;
+  font-size: 1.1em;}
+#customHome-services{
+    grid-template-rows: 24vw 18vw;
+}
+
+
+
+
+.addition-services-grid{
+    grid-template-rows: 22vw 0vw;
+}
+
+@media (max-width:1000px){
+.customHome-blurb{
+  width:90%;}
+.servicesPage h3{
+  width:90%;}
+.servicesPage-grid{
+  width: 90%;
+  grid-template-rows: 22vw 22vw;
+  grid-gap:125px 15px;
+  margin-bottom: 180px;}}
+
+
+
+
+
+
+#review-section{
+  width: 62.5%;
+  margin: auto;
+  margin-top: 25px;
+}
+#review-section h3{
+    width: 100%;
+    margin-bottom:25px;
+    border-radius:10px;
+}
+.review-background{
+    background-color: #e5e5e5;
+    width:100%;
+    padding: 50px;
+    border-radius: 15px;
+}
+#review-gallery{
+  display: grid;
+  grid-gap: 2vw;
+  margin: auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin-top: 10px;
+}
+
+
+@media (max-width:600px){
+    .review-background{
+    padding: 30px 0px 0px 0px;
+    }
+}
+@media (max-width:900px){
+    #review-section{
+        width:100%;
+        margin: none;
+    }
+    #review-section h3{
+
+    width: 100%;
+    margin-bottom:30px;
+    border-radius:10px;
+}
+}
+@media (max-width:1800px){
+    #review-gallery{
+        grid-template-columns: 100%;
+        grid-template-rows: 52vh 34vh;
+        grid-gap: 26px;
+    }
+}

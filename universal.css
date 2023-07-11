@@ -1,0 +1,315 @@
+/*
+This CSS document is for css that is used throughout the entire website.
+*/
+*{
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif, helvetica;
+  box-sizing: border-box;}
+ul{margin-left: 25px;}
+h1{font-size: 2.7em;}
+h2{font-size: 2.3em;}
+h3{font-size: 1.9em;}
+h4{font-size: 1.6em;}
+h5{font-size: 1.2em;}
+a{
+  text-decoration: none;
+  font-size: 1.3em;}
+
+
+
+/*General use css*/
+.notice{
+  position: absolute;
+  background-color: lightyellow;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 15px;
+  width:100%;}
+
+
+
+/*This section defines the main header of the website*/
+header.main-header{
+    margin: auto;
+    padding: 35px 50px 35px 0px;
+    display: flex;
+    align-items: center;
+    width: 90%;}
+header.main-header img{
+    width: 25vmax;}
+header.main-header a{
+    font-size:1.3em;
+    color: #5d6d7e;
+    margin: .5vw;
+    padding: 3px 7px 3px 7px;}
+header.main-header a:hover{
+    font-weight: bolder;
+    transition: .1s;}
+header.main-header ul li{
+    list-style: none;
+    display: inline;}
+header.main-header img.social{
+	width:62px;
+	position: relative;
+	top:10px;
+	left: 15px;
+	margin: -15px;}
+header.main-header .currentPage{
+    border: 1.5px #5d6d7e solid;
+    padding: 10px;}
+/*CSS for all dropdowns*/
+header .mainNav-dropdownList{
+  position: relative;
+  display: inline-block;}
+header .mainNav-dropdownItems {
+  font-size: .8em;
+  display: none;
+  position: absolute;
+  min-width: 280px;
+  padding: 10px 10px 10px -2px;
+  background-color: #e5e5e5;
+  z-index: 1;
+  border-radius:5px;
+}
+
+.mainNav-dropdownList:hover .mainNav-dropdownItems {
+  display: block;
+}
+
+@media (max-width:850px){
+    header.main-header img{
+        width: 100%;
+        padding: 0px;
+        margin-left: -13px;
+    }
+}
+
+
+/*This code is important for hiding certain elements on desktop screens until a seperate piece of code makes it visible.*/
+.hide-desktop{
+    display:none;}
+
+
+/*This section hides the mobile navigation bar until it's needed.*/
+.mobile-nav-button{
+    display: none;}
+#mobileNav{
+    display: none;}
+
+
+/*This will make the mobile navigation appear on some tablets and all phones.*/
+@media (max-width:850px){
+.mobileNav-bar{
+    display: block;
+    width: 105%;
+    position: fixed;
+    bottom: 0px;
+    padding: 15px;
+    text-align: center;
+    background-color:#5d6d7e;}
+.mobileNav-bar a{
+    font-size: 5vw;
+    color:#ffffff;
+    text-align: center;
+    margin-right: 17px;
+    position: relative;
+    left:-20px;}
+.mobileNav-bar a:hover{
+    color:purple;}
+.mobileNav-bar li{
+    display: inline;}}
+
+
+
+
+/*This section has all the CSS for headers.*/
+.pageHeader{
+  background-color: #e5e5e5;
+  text-align: center;
+  margin: -10px 0px 50px 0px;
+  padding: 100px;
+  color:#5d6d7e;}
+.coverImageHeader{
+  background-color: #5d6d7e;
+  color:#ffffff;
+  text-align: center;
+  width: 100vw;
+  padding:15px;}
+.sectionHeader-Wide{
+  text-align: center;
+  background-color: #5d6d7e;
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding: 14px;
+  border-radius: 55px;}
+.sectionHeader-Narrow{
+  text-align: center;
+  background-color: #5d6d7e;
+  color: #ffffff;
+  width: 63.5%;
+  margin: auto;
+  padding: 14px;
+  border-radius: 55px;}
+.subSectionHeader{
+  margin:auto;
+  text-align: center;
+  color:#5d6d7e;}
+
+
+
+
+
+.pageFooter{
+  background-color: #5d6d7e;}
+.pageFooter-alternate{
+  /*This css block will stick the footer to the bottom of a page that does not have enough content to push it there.*/
+  position: fixed;
+  bottom:0px;
+  width:100%;
+  margin: auto;
+  background-color: #5d6d7e;}
+.pageFooter ul{
+  list-style: none;
+  margin: 0px;}
+.pageFooter p{
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  width: 90%;}
+.pageFooter img{
+  width: 72px;}
+.footer-flexbox{
+  padding-top: 35px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;}
+.pageFooter a{
+  color: #ffffff;}
+.pageFooter a:hover{
+  color: purple;}
+
+
+
+
+
+#businessNetwork{
+    background-color:#e5e5e5;
+    padding: 45px;
+}
+#businessNetwork-header{
+    text-align: center;
+}
+#businessNetwork-grid{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 24vmin 24vmin;
+    width:80%;
+    margin: auto;
+    margin-top:55px;
+    justify-content:center
+}
+.businessNetwork-Module{
+    text-align: center;
+
+}
+.businessNetwork-Module img{
+    width:300px;  
+}
+.businessNetwork-button{
+    text-align: center;
+    
+}
+.businessNetwork-button a{
+    border: 3px solid #5d6d7e;
+	color:#5d6d7e;
+	padding: 12px 4% 12px 4%;
+	border-radius: 35px;
+}
+.businessNetwork-button a:hover{
+    background: #5d6d7e;
+	color:#ffffff;
+	transition:.4s;
+}
+@media (max-width:1300px){
+    #businessNetwork-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 24vmax 24vmax 24vmax;
+    }
+.businessNetwork-Module img{
+    width:250px;  
+}}
+@media (max-width:700px){
+    #businessNetwork-grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 24vmax 24vmax 24vmax;
+    }
+.businessNetwork-Module img{
+    width:250px;  
+}}
+
+
+
+/*Buttons*/
+.utilityButton-floating a{
+	border: 3px solid #5d6d7e;
+	color:#5d6d7e;
+	padding: 12px 4% 12px 4%;
+	border-radius: 35px;
+}
+.utilityButton-floating{
+	text-align: center;
+	margin: 115px;	
+}
+.utilityButton-floating a:hover{
+	background: #5d6d7e;
+	color:#ffffff;
+	transition:.4s;
+}
+.reviewButton-utility button{
+    border: 3px solid #5d6d7e;
+	color:#5d6d7e;
+	padding: 12px 85px 12px 85px;
+	border-radius: 35px;
+    cursor:pointer;
+    outline:none;}
+.reviewButton-utility{
+	text-align: center;
+	margin: 35px 0px 65px 0px;}
+.reviewButton-utility button:hover{
+    background-color: #5d6d7e;
+    color:#ffffff;
+}
+.closeButton{
+    position:relative;
+    right:205px;
+    color:#5d6d7e;
+    font-weight:600;
+    cursor: pointer;
+}
+
+@media (max-width:850px){
+    .main-header nav{
+        display:none;
+    }
+    .hide{
+        display:none
+    }
+}
+
+
+
+.container{
+  width: 80%;
+  margin: auto;}
+
+
+.backToTop{
+ margin-bottom: 25px;
+}
+
+
+

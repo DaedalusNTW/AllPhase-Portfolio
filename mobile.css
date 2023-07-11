@@ -1,0 +1,75 @@
+@media (max-width:850px){ /*This block transforms the website with a mobile optimized design pattern.*/
+    .hide{
+        display:none;
+    }
+    header.main-header nav{
+        display: none;}
+    #siteCover img{
+        height: 460px;;
+    }
+    .coverHeader h2{
+        font-weight: 200; font-size:1.2em;}
+    
+    }
+    .sectionHeader{
+        display:none;
+    }
+    .sectionHeader-mobile{
+       display:block;
+       background-color: #5d6d7e;
+       color:#ffffff;
+       border-radius: 55px;
+       width: 85%;
+       margin: auto;
+       margin-top: 45px;
+       padding: 7px;
+       text-align: center;
+    }
+
+
+.socialNav{
+    display:none;
+}
+
+
+
+
+
+
+.gallery-grid{
+  display:grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(24, 20vw);
+  grid-gap: 10px;}
+
+
+
+@media (max-width:1300px){/*Contact page*/
+    .subSection-header{
+        display:none;
+    }
+    .contact-module h3{
+        margin:-75px 0px 45px 0px
+    
+    }
+	#contact-grid{
+		display: block;
+
+	}
+	.contact-module{
+		width:90%;
+		margin: auto;
+        background-color:white;
+	}
+    .contact-module p{
+  
+    }
+	.contact-module-info{
+		width: 100%;
+		margin: auto;
+		margin-top: 25px;
+        border-radius: 0px;
+	}
+}
